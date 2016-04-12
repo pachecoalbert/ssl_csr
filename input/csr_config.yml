@@ -1,0 +1,13 @@
+
+
+# openssl req -new -key <private key file> -out <CSR output file> -subj "/C=<Country Name>/ST=<State>/L=<Locality Name>/O=<Organization Name>/CN=<Common Name>"
+# EG openssl req -new -sha256 -newkey rsa:2048 -nodes -keyout sis.ws.dev.ats.cloud.huit.harvard.edu.key -out sis.ws.dev.ats.cloud.huit.harvard.edu.csr -subj "/C=US/ST=MA/L=Cambridge/O=Harvard University/OU=HUIT/CN=sis.ws.dev.ats.cloud.huit.harvard.edu"
+csr_subj:
+    country: US
+    state: MA
+    locality: Cambridge
+    organization: "Harvard University"
+    organization_unit: HUIT
+    common_name: sis.ws.dev.ats.cloud.huit.harvard.edu
+
+
